@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Actividades | Admin{% endblock %}
+{% block header %}Actividades{% endblock %}
+{% block eyebrow %}Control de asistencia{% endblock %}
+
+{% block content %}
+<div class="panel">
+    <div class="panel-header">
+        <div>
+            <h3>Actividades registradas</h3>
+            <p>Desde aquí puedes abrir cada actividad y marcar ✓ o ✗.</p>
+        </div>
+        <a class="btn-primary" href="{{ url_for('admin.nueva_actividad') }}">Crear actividad</a>
+    </div>
+
+    <div class="cards-grid">
+        {% for act in actividades %}
+        <div class="activity-card">
+            <span>{{ act.fecha_actividad.strftime('%d/%m/%Y') }}</span>
+            <h3>{{ act.nombre_actividad }}</h3>
+            <p>{{ act.descripcion or 'Sin descripción' }}</p>
+            <div class="card-actions">
+                <a class="btn-secondary" href="{{ url_for('admin.registrar_asistencias', id_actividad=act.id_actividad) }}">Asistencia</a>
+                <form method="POST" action="{{ url_for('admin.eliminar_actividad', id_actividad=act.id_actividad) }}" onsubmit="return confirm('¿Eliminar esta actividad?')">
+                    <button class="btn-danger" type="submit">Eliminar</button>
+                </form>
+            </div>
+        </div>
+        {% else %}
+        <p>No hay actividades registradas.</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

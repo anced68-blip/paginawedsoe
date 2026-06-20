@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Iniciar sesión | Asistencias{% endblock %}
+{% block header %}Acceso al sistema{% endblock %}
+{% block eyebrow %}Control de miembros{% endblock %}
+
+{% block content %}
+<div class="auth-shell">
+    <div class="auth-hero">
+        <span class="badge">Sistema de puntos</span>
+        <h1>Controla asistencias, puntos y rangos de miembros.</h1>
+        <p>Los miembros consultan su historial, foto de perfil, rango y puntos por actividad. El administrador registra actividades, asistencias y puntajes.</p>
+        <div class="rank-row">
+            <span>Bronce</span>
+            <span>Plata</span>
+            <span>Oro</span>
+            <span>Platino</span>
+        </div>
+    </div>
+
+    <form method="POST" class="auth-card">
+        <div class="card-icon">✦</div>
+        <h2>Iniciar sesión</h2>
+        <p>Ingresa con tu usuario asignado.</p>
+
+        <label>Usuario</label>
+        <input type="text" name="username" placeholder="apellido.nombre" required>
+
+        <label>Contraseña</label>
+        <input type="password" name="password" placeholder="••••••••" required>
+
+        <button type="submit" class="btn-primary full">Entrar</button>
+
+        <div class="hint">
+            Admin inicial: <strong>admin</strong> / <strong>admin123</strong><br>
+            Miembros: contraseña inicial <strong>123456</strong>
+        </div>
+    </form>
+</div>
+{% endblock %}

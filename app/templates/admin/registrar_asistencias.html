@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Registrar Asistencias | Admin{% endblock %}
+{% block header %}{{ actividad.nombre_actividad }}{% endblock %}
+{% block eyebrow %}{{ actividad.fecha_actividad.strftime('%d/%m/%Y') }}{% endblock %}
+
+{% block content %}
+<form method="POST" class="panel">
+    <div class="panel-header">
+        <div>
+            <h3>Asistencias y puntos</h3>
+            <p>Marca ✓ si asistió. Si no asistió, los puntos se guardan como 0.</p>
+        </div>
+        <button class="btn-primary" type="submit">Guardar cambios</button>
+    </div>
+
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>Miembro</th>
+                    <th>Asistió</th>
+                    <th>Puntos</th>
+                    <th>Observación</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for miembro in miembros %}
+                {% set reg = registros.get(miembro.id_miembro) %}
+                <tr>
+                    <td>{{ miembro.nombre_completo }}</td>
+                    <td>
+                        <label class="check-switch">
+                            <input type="checkbox" name="asistio_{{ miembro.id_miembro }}" {% if reg and reg.asistio %}checked{% endif %}>
+                            <span>✓</span>
+                        </label>
+                    </td>
+                    <td>
+                        <input class="small-input" type="number" min="0" name="puntos_{{ miembro.id_miembro }}" value="{{ reg.puntos if reg else actividad.puntos_referencia }}">
+                    </td>
+                    <td>
+                        <input type="text" name="observacion_{{ miembro.id_miembro }}" value="{{ reg.observacion if reg else '' }}" placeholder="Opcional">
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</form>
+{% endblock %}

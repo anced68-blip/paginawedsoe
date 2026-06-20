@@ -1,0 +1,1223 @@
+{
+  "members": [
+    {
+      "primer_nombre": "Alejandra",
+      "segundo_nombre": "Valeria",
+      "primer_apellido": "Alvarez",
+      "segundo_apellido": "Tejada",
+      "nombre_completo": "Alejandra Valeria Alvarez Tejada",
+      "username": "alvarez.alejandra",
+      "estado": "activo"
+    },
+    {
+      "primer_nombre": "Lizbeth",
+      "segundo_nombre": "Yetzebel",
+      "primer_apellido": "Ortuño",
+      "segundo_apellido": "Diaz",
+      "nombre_completo": "Lizbeth Yetzebel Ortuño Diaz",
+      "username": "ortuno.lizbeth",
+      "estado": "activo"
+    },
+    {
+      "primer_nombre": "Jose",
+      "segundo_nombre": "David",
+      "primer_apellido": "Gumucio",
+      "segundo_apellido": null,
+      "nombre_completo": "Jose David Gumucio",
+      "username": "gumucio.jose",
+      "estado": "activo"
+    },
+    {
+      "primer_nombre": "Alexis",
+      "segundo_nombre": "Fernando",
+      "primer_apellido": "López",
+      "segundo_apellido": "Rojas",
+      "nombre_completo": "Alexis Fernando López Rojas",
+      "username": "lopez.alexis",
+      "estado": "activo"
+    },
+    {
+      "primer_nombre": "Sigrid",
+      "segundo_nombre": "Alieska",
+      "primer_apellido": "Castedo",
+      "segundo_apellido": "Romero",
+      "nombre_completo": "Castedo Romero Sigrid Alieska",
+      "username": "castedo.sigrid",
+      "estado": "activo"
+    },
+    {
+      "primer_nombre": "Héctor",
+      "segundo_nombre": null,
+      "primer_apellido": "Colque",
+      "segundo_apellido": null,
+      "nombre_completo": "Héctor Colque",
+      "username": "colque.hector",
+      "estado": "activo"
+    },
+    {
+      "primer_nombre": "Angely",
+      "segundo_nombre": "Aranibar",
+      "primer_apellido": "Jorge",
+      "segundo_apellido": null,
+      "nombre_completo": "Angely Aranibar Jorge",
+      "username": "jorge.angely",
+      "estado": "activo"
+    },
+    {
+      "primer_nombre": "Alison",
+      "segundo_nombre": "Belén",
+      "primer_apellido": "Pizarro",
+      "segundo_apellido": null,
+      "nombre_completo": "Alison Belén Pizarro",
+      "username": "pizarro.alison",
+      "estado": "activo"
+    },
+    {
+      "primer_nombre": "Óscar",
+      "segundo_nombre": "Manuel",
+      "primer_apellido": "Zorrilla",
+      "segundo_apellido": "Cáceres",
+      "nombre_completo": "Óscar Manuel Zorrilla Cáceres",
+      "username": "zorrilla.oscar",
+      "estado": "activo"
+    },
+    {
+      "primer_nombre": "Amparo",
+      "segundo_nombre": "Milena",
+      "primer_apellido": "Vega",
+      "segundo_apellido": "Cardenas",
+      "nombre_completo": "Amparo Milena Vega Cardenas",
+      "username": "vega.amparo",
+      "estado": "activo"
+    },
+    {
+      "primer_nombre": "Yostin",
+      "segundo_nombre": "Choquecallata",
+      "primer_apellido": "Cerrogrande",
+      "segundo_apellido": null,
+      "nombre_completo": "Yostin Choquecallata Cerrogrande",
+      "username": "cerrogrande.yostin",
+      "estado": "activo"
+    },
+    {
+      "primer_nombre": "Alexander",
+      "segundo_nombre": "Jesus",
+      "primer_apellido": "Salvatierra",
+      "segundo_apellido": "Maydana",
+      "nombre_completo": "Alexander Jesus Salvatierra Maydana",
+      "username": "salvatierra.alexander",
+      "estado": "activo"
+    },
+    {
+      "primer_nombre": "Andres",
+      "segundo_nombre": "Farid",
+      "primer_apellido": "Ignacio",
+      "segundo_apellido": "Ramirez",
+      "nombre_completo": "Andres Farid Ignacio Ramirez",
+      "username": "ignacio.andres",
+      "estado": "activo"
+    },
+    {
+      "primer_nombre": "Yessy",
+      "segundo_nombre": "Michel",
+      "primer_apellido": "Mamani",
+      "segundo_apellido": "Solano",
+      "nombre_completo": "Yessy Michel Mamani Solano",
+      "username": "mamani.yessy",
+      "estado": "activo"
+    },
+    {
+      "primer_nombre": "Tatiana",
+      "segundo_nombre": "Araceyl",
+      "primer_apellido": "Vargas",
+      "segundo_apellido": "Boyan",
+      "nombre_completo": "Tatiana Araceyl Vargas Boyan",
+      "username": "vargas.tatiana",
+      "estado": "activo"
+    },
+    {
+      "primer_nombre": "Linda",
+      "segundo_nombre": "Nelva",
+      "primer_apellido": "Tovar",
+      "segundo_apellido": null,
+      "nombre_completo": "Linda Nelva Tovar",
+      "username": "tovar.linda",
+      "estado": "activo"
+    }
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "nombre": "Taller De Liderazgo",
+      "fecha": "2026-03-28",
+      "descripcion": "Actividad importada desde el Excel de puntos.",
+      "puntos_referencia": 100
+    },
+    {
+      "id": 2,
+      "nombre": "Dia Del Niño",
+      "fecha": "2026-04-11",
+      "descripcion": "Actividad importada desde el Excel de puntos.",
+      "puntos_referencia": 100
+    },
+    {
+      "id": 3,
+      "nombre": "Glasswalking",
+      "fecha": "2026-04-18",
+      "descripcion": "Actividad importada desde el Excel de puntos.",
+      "puntos_referencia": 100
+    },
+    {
+      "id": 4,
+      "nombre": "Limpieza A A La Casa De Los Niños",
+      "fecha": "2026-04-25",
+      "descripcion": "Actividad importada desde el Excel de puntos.",
+      "puntos_referencia": 100
+    },
+    {
+      "id": 5,
+      "nombre": "Un Paseo Por La Cascada",
+      "fecha": "2026-05-09",
+      "descripcion": "Actividad importada desde el Excel de puntos.",
+      "puntos_referencia": 100
+    },
+    {
+      "id": 6,
+      "nombre": "Domina Tu Mente-Quiz Game",
+      "fecha": "2026-05-16",
+      "descripcion": "Actividad importada desde el Excel de puntos.",
+      "puntos_referencia": 100
+    },
+    {
+      "id": 7,
+      "nombre": "Reunion Bienestar Social",
+      "fecha": "2026-05-23",
+      "descripcion": "Actividad importada desde el Excel de puntos.",
+      "puntos_referencia": 100
+    },
+    {
+      "id": 8,
+      "nombre": "Evento Del Decimo Aniversario",
+      "fecha": "2026-05-30",
+      "descripcion": "Actividad importada desde el Excel de puntos.",
+      "puntos_referencia": 100
+    },
+    {
+      "id": 9,
+      "nombre": "Comicon Soe",
+      "fecha": "2026-06-13",
+      "descripcion": "Actividad importada desde el Excel de puntos.",
+      "puntos_referencia": 100
+    }
+  ],
+  "attendance": [
+    {
+      "activity_id": 1,
+      "member_username": "alvarez.alejandra",
+      "asistio": true,
+      "puntos": 55,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 1,
+      "member_username": "ortuno.lizbeth",
+      "asistio": true,
+      "puntos": 55,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 1,
+      "member_username": "gumucio.jose",
+      "asistio": true,
+      "puntos": 60,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 1,
+      "member_username": "lopez.alexis",
+      "asistio": true,
+      "puntos": 55,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 1,
+      "member_username": "castedo.sigrid",
+      "asistio": true,
+      "puntos": 80,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 1,
+      "member_username": "colque.hector",
+      "asistio": true,
+      "puntos": 80,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 1,
+      "member_username": "jorge.angely",
+      "asistio": true,
+      "puntos": 15,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 1,
+      "member_username": "pizarro.alison",
+      "asistio": true,
+      "puntos": 55,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 1,
+      "member_username": "zorrilla.oscar",
+      "asistio": true,
+      "puntos": 40,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 1,
+      "member_username": "vega.amparo",
+      "asistio": true,
+      "puntos": 80,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 1,
+      "member_username": "cerrogrande.yostin",
+      "asistio": true,
+      "puntos": 90,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 1,
+      "member_username": "salvatierra.alexander",
+      "asistio": true,
+      "puntos": 35,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 1,
+      "member_username": "ignacio.andres",
+      "asistio": true,
+      "puntos": 15,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 1,
+      "member_username": "mamani.yessy",
+      "asistio": true,
+      "puntos": 45,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 1,
+      "member_username": "vargas.tatiana",
+      "asistio": true,
+      "puntos": 45,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 1,
+      "member_username": "tovar.linda",
+      "asistio": false,
+      "puntos": 0,
+      "observacion": "Falta / sin puntos"
+    },
+    {
+      "activity_id": 2,
+      "member_username": "alvarez.alejandra",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 2,
+      "member_username": "ortuno.lizbeth",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 2,
+      "member_username": "gumucio.jose",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 2,
+      "member_username": "lopez.alexis",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 2,
+      "member_username": "castedo.sigrid",
+      "asistio": true,
+      "puntos": 75,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 2,
+      "member_username": "colque.hector",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 2,
+      "member_username": "jorge.angely",
+      "asistio": true,
+      "puntos": 80,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 2,
+      "member_username": "pizarro.alison",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 2,
+      "member_username": "zorrilla.oscar",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 2,
+      "member_username": "vega.amparo",
+      "asistio": true,
+      "puntos": 85,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 2,
+      "member_username": "cerrogrande.yostin",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 2,
+      "member_username": "salvatierra.alexander",
+      "asistio": false,
+      "puntos": 0,
+      "observacion": "Falta / sin puntos"
+    },
+    {
+      "activity_id": 2,
+      "member_username": "ignacio.andres",
+      "asistio": true,
+      "puntos": 75,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 2,
+      "member_username": "mamani.yessy",
+      "asistio": true,
+      "puntos": 105,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 2,
+      "member_username": "vargas.tatiana",
+      "asistio": true,
+      "puntos": 90,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 2,
+      "member_username": "tovar.linda",
+      "asistio": false,
+      "puntos": 0,
+      "observacion": "Falta / sin puntos"
+    },
+    {
+      "activity_id": 3,
+      "member_username": "alvarez.alejandra",
+      "asistio": false,
+      "puntos": 0,
+      "observacion": "Falta / sin puntos"
+    },
+    {
+      "activity_id": 3,
+      "member_username": "ortuno.lizbeth",
+      "asistio": false,
+      "puntos": 0,
+      "observacion": "Falta / sin puntos"
+    },
+    {
+      "activity_id": 3,
+      "member_username": "gumucio.jose",
+      "asistio": true,
+      "puntos": 65,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 3,
+      "member_username": "lopez.alexis",
+      "asistio": true,
+      "puntos": 65,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 3,
+      "member_username": "castedo.sigrid",
+      "asistio": true,
+      "puntos": 65,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 3,
+      "member_username": "colque.hector",
+      "asistio": true,
+      "puntos": 90,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 3,
+      "member_username": "jorge.angely",
+      "asistio": true,
+      "puntos": 50,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 3,
+      "member_username": "pizarro.alison",
+      "asistio": true,
+      "puntos": 65,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 3,
+      "member_username": "zorrilla.oscar",
+      "asistio": true,
+      "puntos": 50,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 3,
+      "member_username": "vega.amparo",
+      "asistio": true,
+      "puntos": 90,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 3,
+      "member_username": "cerrogrande.yostin",
+      "asistio": true,
+      "puntos": 90,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 3,
+      "member_username": "salvatierra.alexander",
+      "asistio": false,
+      "puntos": 0,
+      "observacion": "Falta / sin puntos"
+    },
+    {
+      "activity_id": 3,
+      "member_username": "ignacio.andres",
+      "asistio": true,
+      "puntos": 75,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 3,
+      "member_username": "mamani.yessy",
+      "asistio": true,
+      "puntos": 45,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 3,
+      "member_username": "vargas.tatiana",
+      "asistio": true,
+      "puntos": 50,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 3,
+      "member_username": "tovar.linda",
+      "asistio": false,
+      "puntos": 0,
+      "observacion": "Falta / sin puntos"
+    },
+    {
+      "activity_id": 4,
+      "member_username": "alvarez.alejandra",
+      "asistio": true,
+      "puntos": 95,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 4,
+      "member_username": "ortuno.lizbeth",
+      "asistio": false,
+      "puntos": 0,
+      "observacion": "Falta / sin puntos"
+    },
+    {
+      "activity_id": 4,
+      "member_username": "gumucio.jose",
+      "asistio": true,
+      "puntos": 85,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 4,
+      "member_username": "lopez.alexis",
+      "asistio": true,
+      "puntos": 90,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 4,
+      "member_username": "castedo.sigrid",
+      "asistio": true,
+      "puntos": 95,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 4,
+      "member_username": "colque.hector",
+      "asistio": true,
+      "puntos": 105,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 4,
+      "member_username": "jorge.angely",
+      "asistio": true,
+      "puntos": 70,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 4,
+      "member_username": "pizarro.alison",
+      "asistio": true,
+      "puntos": 105,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 4,
+      "member_username": "zorrilla.oscar",
+      "asistio": false,
+      "puntos": 0,
+      "observacion": "Falta / sin puntos"
+    },
+    {
+      "activity_id": 4,
+      "member_username": "vega.amparo",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 4,
+      "member_username": "cerrogrande.yostin",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 4,
+      "member_username": "salvatierra.alexander",
+      "asistio": true,
+      "puntos": 85,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 4,
+      "member_username": "ignacio.andres",
+      "asistio": true,
+      "puntos": 70,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 4,
+      "member_username": "mamani.yessy",
+      "asistio": true,
+      "puntos": 105,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 4,
+      "member_username": "vargas.tatiana",
+      "asistio": true,
+      "puntos": 105,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 4,
+      "member_username": "tovar.linda",
+      "asistio": false,
+      "puntos": 0,
+      "observacion": "Falta / sin puntos"
+    },
+    {
+      "activity_id": 5,
+      "member_username": "alvarez.alejandra",
+      "asistio": true,
+      "puntos": 95,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 5,
+      "member_username": "ortuno.lizbeth",
+      "asistio": true,
+      "puntos": 60,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 5,
+      "member_username": "gumucio.jose",
+      "asistio": true,
+      "puntos": 85,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 5,
+      "member_username": "lopez.alexis",
+      "asistio": true,
+      "puntos": 90,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 5,
+      "member_username": "castedo.sigrid",
+      "asistio": true,
+      "puntos": 105,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 5,
+      "member_username": "colque.hector",
+      "asistio": true,
+      "puntos": 105,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 5,
+      "member_username": "jorge.angely",
+      "asistio": true,
+      "puntos": 70,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 5,
+      "member_username": "pizarro.alison",
+      "asistio": true,
+      "puntos": 105,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 5,
+      "member_username": "zorrilla.oscar",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 5,
+      "member_username": "vega.amparo",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 5,
+      "member_username": "cerrogrande.yostin",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 5,
+      "member_username": "salvatierra.alexander",
+      "asistio": true,
+      "puntos": 85,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 5,
+      "member_username": "ignacio.andres",
+      "asistio": true,
+      "puntos": 80,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 5,
+      "member_username": "mamani.yessy",
+      "asistio": true,
+      "puntos": 105,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 5,
+      "member_username": "vargas.tatiana",
+      "asistio": true,
+      "puntos": 105,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 5,
+      "member_username": "tovar.linda",
+      "asistio": true,
+      "puntos": 80,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 6,
+      "member_username": "alvarez.alejandra",
+      "asistio": true,
+      "puntos": 90,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 6,
+      "member_username": "ortuno.lizbeth",
+      "asistio": true,
+      "puntos": 15,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 6,
+      "member_username": "gumucio.jose",
+      "asistio": true,
+      "puntos": 85,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 6,
+      "member_username": "lopez.alexis",
+      "asistio": true,
+      "puntos": 90,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 6,
+      "member_username": "castedo.sigrid",
+      "asistio": false,
+      "puntos": 0,
+      "observacion": "Falta / sin puntos"
+    },
+    {
+      "activity_id": 6,
+      "member_username": "colque.hector",
+      "asistio": true,
+      "puntos": 90,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 6,
+      "member_username": "jorge.angely",
+      "asistio": true,
+      "puntos": 70,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 6,
+      "member_username": "pizarro.alison",
+      "asistio": true,
+      "puntos": 95,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 6,
+      "member_username": "zorrilla.oscar",
+      "asistio": true,
+      "puntos": 30,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 6,
+      "member_username": "vega.amparo",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 6,
+      "member_username": "cerrogrande.yostin",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 6,
+      "member_username": "salvatierra.alexander",
+      "asistio": false,
+      "puntos": 0,
+      "observacion": "Falta / sin puntos"
+    },
+    {
+      "activity_id": 6,
+      "member_username": "ignacio.andres",
+      "asistio": true,
+      "puntos": 75,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 6,
+      "member_username": "mamani.yessy",
+      "asistio": false,
+      "puntos": 0,
+      "observacion": "Falta / sin puntos"
+    },
+    {
+      "activity_id": 6,
+      "member_username": "vargas.tatiana",
+      "asistio": true,
+      "puntos": 105,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 6,
+      "member_username": "tovar.linda",
+      "asistio": false,
+      "puntos": 0,
+      "observacion": "Falta / sin puntos"
+    },
+    {
+      "activity_id": 7,
+      "member_username": "alvarez.alejandra",
+      "asistio": true,
+      "puntos": 105,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 7,
+      "member_username": "ortuno.lizbeth",
+      "asistio": true,
+      "puntos": 85,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 7,
+      "member_username": "gumucio.jose",
+      "asistio": true,
+      "puntos": 85,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 7,
+      "member_username": "lopez.alexis",
+      "asistio": true,
+      "puntos": 90,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 7,
+      "member_username": "castedo.sigrid",
+      "asistio": true,
+      "puntos": 105,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 7,
+      "member_username": "colque.hector",
+      "asistio": true,
+      "puntos": 105,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 7,
+      "member_username": "jorge.angely",
+      "asistio": true,
+      "puntos": 85,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 7,
+      "member_username": "pizarro.alison",
+      "asistio": true,
+      "puntos": 95,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 7,
+      "member_username": "zorrilla.oscar",
+      "asistio": true,
+      "puntos": 105,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 7,
+      "member_username": "vega.amparo",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 7,
+      "member_username": "cerrogrande.yostin",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 7,
+      "member_username": "salvatierra.alexander",
+      "asistio": true,
+      "puntos": 90,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 7,
+      "member_username": "ignacio.andres",
+      "asistio": true,
+      "puntos": 85,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 7,
+      "member_username": "mamani.yessy",
+      "asistio": true,
+      "puntos": 115,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 7,
+      "member_username": "vargas.tatiana",
+      "asistio": true,
+      "puntos": 105,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 7,
+      "member_username": "tovar.linda",
+      "asistio": true,
+      "puntos": 85,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 8,
+      "member_username": "alvarez.alejandra",
+      "asistio": true,
+      "puntos": 85,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 8,
+      "member_username": "ortuno.lizbeth",
+      "asistio": true,
+      "puntos": 70,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 8,
+      "member_username": "gumucio.jose",
+      "asistio": true,
+      "puntos": 105,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 8,
+      "member_username": "lopez.alexis",
+      "asistio": false,
+      "puntos": 0,
+      "observacion": "Falta / sin puntos"
+    },
+    {
+      "activity_id": 8,
+      "member_username": "castedo.sigrid",
+      "asistio": true,
+      "puntos": 85,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 8,
+      "member_username": "colque.hector",
+      "asistio": true,
+      "puntos": 90,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 8,
+      "member_username": "jorge.angely",
+      "asistio": true,
+      "puntos": 85,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 8,
+      "member_username": "pizarro.alison",
+      "asistio": true,
+      "puntos": 85,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 8,
+      "member_username": "zorrilla.oscar",
+      "asistio": true,
+      "puntos": 70,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 8,
+      "member_username": "vega.amparo",
+      "asistio": true,
+      "puntos": 95,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 8,
+      "member_username": "cerrogrande.yostin",
+      "asistio": false,
+      "puntos": 0,
+      "observacion": "Falta / sin puntos"
+    },
+    {
+      "activity_id": 8,
+      "member_username": "salvatierra.alexander",
+      "asistio": true,
+      "puntos": 135,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 8,
+      "member_username": "ignacio.andres",
+      "asistio": true,
+      "puntos": 85,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 8,
+      "member_username": "mamani.yessy",
+      "asistio": true,
+      "puntos": 80,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 8,
+      "member_username": "vargas.tatiana",
+      "asistio": true,
+      "puntos": 115,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 8,
+      "member_username": "tovar.linda",
+      "asistio": false,
+      "puntos": 0,
+      "observacion": "Falta / sin puntos"
+    },
+    {
+      "activity_id": 9,
+      "member_username": "alvarez.alejandra",
+      "asistio": true,
+      "puntos": 115,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 9,
+      "member_username": "ortuno.lizbeth",
+      "asistio": true,
+      "puntos": 90,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 9,
+      "member_username": "gumucio.jose",
+      "asistio": true,
+      "puntos": 115,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 9,
+      "member_username": "lopez.alexis",
+      "asistio": true,
+      "puntos": 65,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 9,
+      "member_username": "castedo.sigrid",
+      "asistio": true,
+      "puntos": 65,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 9,
+      "member_username": "colque.hector",
+      "asistio": true,
+      "puntos": 65,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 9,
+      "member_username": "jorge.angely",
+      "asistio": true,
+      "puntos": 135,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 9,
+      "member_username": "pizarro.alison",
+      "asistio": true,
+      "puntos": 75,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 9,
+      "member_username": "zorrilla.oscar",
+      "asistio": true,
+      "puntos": 80,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 9,
+      "member_username": "vega.amparo",
+      "asistio": true,
+      "puntos": 65,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 9,
+      "member_username": "cerrogrande.yostin",
+      "asistio": true,
+      "puntos": 75,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 9,
+      "member_username": "salvatierra.alexander",
+      "asistio": true,
+      "puntos": 100,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 9,
+      "member_username": "ignacio.andres",
+      "asistio": true,
+      "puntos": 85,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 9,
+      "member_username": "mamani.yessy",
+      "asistio": true,
+      "puntos": 25,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 9,
+      "member_username": "vargas.tatiana",
+      "asistio": true,
+      "puntos": 120,
+      "observacion": "Importado desde Excel"
+    },
+    {
+      "activity_id": 9,
+      "member_username": "tovar.linda",
+      "asistio": true,
+      "puntos": 25,
+      "observacion": "Importado desde Excel"
+    }
+  ]
+}

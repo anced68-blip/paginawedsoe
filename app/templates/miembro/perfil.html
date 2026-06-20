@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Mi Perfil | Miembro{% endblock %}
+{% block header %}Configuración de perfil{% endblock %}
+{% block eyebrow %}Foto, usuario y contraseña{% endblock %}
+
+{% block content %}
+<section class="content-grid">
+    <form method="POST" enctype="multipart/form-data" class="panel form-panel">
+        <input type="hidden" name="accion" value="foto">
+        <h3>Foto de perfil</h3>
+        <div class="avatar-preview">
+            {% if current_user.foto_perfil %}
+                <img src="{{ url_for('static', filename=current_user.foto_perfil) }}" alt="Foto de perfil">
+            {% else %}
+                <div class="avatar-placeholder big">{{ miembro.primer_nombre[0] }}{{ miembro.primer_apellido[0] }}</div>
+            {% endif %}
+        </div>
+        <input type="file" name="foto_perfil" accept=".png,.jpg,.jpeg,.webp">
+        <button class="btn-primary" type="submit">Subir foto</button>
+    </form>
+
+    <form method="POST" class="panel form-panel">
+        <input type="hidden" name="accion" value="datos">
+        <h3>Datos de cuenta</h3>
+
+        <label>Usuario</label>
+        <input type="text" name="username" value="{{ current_user.username }}" required>
+
+        <label>Correo electrónico</label>
+        <input type="email" name="email" value="{{ current_user.email or '' }}" placeholder="correo@ejemplo.com">
+
+        <button class="btn-primary" type="submit">Guardar datos</button>
+    </form>
+
+    <form method="POST" class="panel form-panel">
+        <input type="hidden" name="accion" value="password">
+        <h3>Cambiar contraseña</h3>
+
+        <label>Contraseña actual</label>
+        <input type="password" name="password_actual" required>
+
+        <label>Nueva contraseña</label>
+        <input type="password" name="password_nueva" minlength="6" required>
+
+        <label>Repetir nueva contraseña</label>
+        <input type="password" name="password_repetir" minlength="6" required>
+
+        <button class="btn-primary" type="submit">Actualizar contraseña</button>
+    </form>
+</section>
+{% endblock %}

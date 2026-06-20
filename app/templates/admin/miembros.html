@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Miembros | Admin{% endblock %}
+{% block header %}Miembros registrados{% endblock %}
+{% block eyebrow %}Usuarios generados{% endblock %}
+
+{% block content %}
+<div class="panel">
+    <div class="panel-header">
+        <div>
+            <h3>Lista de miembros</h3>
+            <p>El usuario se genera con primer apellido + primer nombre.</p>
+        </div>
+        <a class="btn-primary" href="{{ url_for('admin.nuevo_miembro') }}">Crear cuenta</a>
+    </div>
+
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre completo</th>
+                    <th>Usuario</th>
+                    <th>Puntos</th>
+                    <th>Rango asignado</th>
+                    <th>Cambiar rango</th>
+                    <th>Asistencias</th>
+                    <th>Faltas</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in resumen %}
+                <tr>
+                    <td>{{ item.miembro.nombre_completo }}</td>
+                    <td>{{ item.usuario.username }}</td>
+                    <td><strong>{{ item.total_puntos }}</strong></td>
+                    <td><span class="rank-pill">{{ item.rango.nombre_rango if item.rango else 'Sin rango' }}</span></td>
+                    <td>
+                        <form class="inline-form" method="POST" action="{{ url_for('admin.actualizar_rango_miembro', id_miembro=item.miembro.id_miembro) }}">
+                            <select name="id_rango_manual">
+                                <option value="">Sin rango</option>
+                                {% for rango in rangos %}
+                                <option value="{{ rango.id_rango }}" {% if item.miembro.id_rango_manual == rango.id_rango %}selected{% endif %}>
+                                    {{ rango.nombre_rango }}
+                                </option>
+                                {% endfor %}
+                            </select>
+                            <button class="btn-mini" type="submit">Guardar</button>
+                        </form>
+                    </td>
+                    <td>{{ item.asistencias }}</td>
+                    <td>{{ item.faltas }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

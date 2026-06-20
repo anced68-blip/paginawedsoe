@@ -1,0 +1,245 @@
+{% extends "base.html" %}
+
+{% block title %}Panel Admin | SOE{% endblock %}
+{% block header %}Panel de administración{% endblock %}
+{% block eyebrow %}Resumen general{% endblock %}
+
+{% block content %}
+
+<style>
+    .chart-box {
+        position: relative;
+        width: 100%;
+        height: 360px;
+        min-height: 360px;
+    }
+
+    .chart-box canvas {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .admin-dashboard-grid {
+        display: grid;
+        grid-template-columns: 1.35fr 0.9fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    @media (max-width: 1100px) {
+        .admin-dashboard-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<section class="kpi-grid">
+    <div class="kpi-card">
+        <span>Miembros</span>
+        <strong>{{ total_miembros }}</strong>
+        <small>registrados</small>
+    </div>
+
+    <div class="kpi-card">
+        <span>Actividades</span>
+        <strong>{{ total_actividades }}</strong>
+        <small>creadas</small>
+    </div>
+
+    <div class="kpi-card">
+        <span>Puntos acumulados</span>
+        <strong>{{ total_puntos }}</strong>
+        <small>en total</small>
+    </div>
+
+    <div class="kpi-card">
+        <span>Asistencia</span>
+        <strong>{{ tasa }}%</strong>
+        <small>promedio general</small>
+    </div>
+</section>
+
+<section class="admin-dashboard-grid">
+
+    <div class="panel wide">
+        <div class="panel-header">
+            <div>
+                <h3>Ranking de miembros</h3>
+                <p>Resumen de puntos, asistencias, faltas y rango actual.</p>
+            </div>
+
+            <a class="btn-secondary" href="{{ url_for('admin.nueva_actividad') }}">
+                Nueva actividad
+            </a>
+        </div>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Miembro</th>
+                        <th>Usuario</th>
+                        <th>Puntos</th>
+                        <th>Asistencias</th>
+                        <th>Faltas</th>
+                        <th>Rango</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for item in resumen %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ item.miembro.nombre_completo }}</td>
+                        <td>{{ item.usuario.username }}</td>
+                        <td><strong>{{ item.total_puntos }}</strong></td>
+                        <td>{{ item.asistencias }}</td>
+                        <td>{{ item.faltas }}</td>
+                        <td>
+                            <span class="rank-pill">
+                                {{ item.rango.nombre_rango if item.rango else "Sin rango" }}
+                            </span>
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="7">No existen miembros registrados.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div>
+        <div class="panel">
+            <div class="panel-header compact">
+                <div>
+                    <h3>Top 5 miembros</h3>
+                    <p>Miembros con mayor puntaje acumulado.</p>
+                </div>
+            </div>
+
+            <div class="chart-box">
+                <canvas id="topMiembrosChart"></canvas>
+            </div>
+
+            <div id="top5-source" style="display: none;">
+                {% for item in top5 %}
+                <span
+                    data-nombre="{{ item.miembro.nombre_completo }}"
+                    data-puntos="{{ item.total_puntos }}">
+                </span>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="panel" style="margin-top: 1.5rem;">
+            <h3>Últimas actividades</h3>
+
+            <div class="activity-list">
+                {% for act in ultimas_actividades %}
+                <a class="activity-item" href="{{ url_for('admin.registrar_asistencias', id_actividad=act.id_actividad) }}">
+                    <strong>{{ act.nombre_actividad }}</strong>
+                    <span>{{ act.fecha_actividad.strftime('%d/%m/%Y') }}</span>
+                </a>
+                {% else %}
+                <p>No hay actividades registradas.</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const sourceItems = document.querySelectorAll("#top5-source span");
+
+    const labels = [];
+    const puntos = [];
+
+    sourceItems.forEach(function (item) {
+        labels.push(item.dataset.nombre);
+        puntos.push(Number(item.dataset.puntos || 0));
+    });
+
+    console.log("Top 5 labels:", labels);
+    console.log("Top 5 puntos:", puntos);
+
+    const canvas = document.getElementById("topMiembrosChart");
+
+    if (!canvas) {
+        console.error("No se encontró el canvas topMiembrosChart");
+        return;
+    }
+
+    if (typeof Chart === "undefined") {
+        console.error("Chart.js no está cargado.");
+        return;
+    }
+
+    new Chart(canvas, {
+        type: "bar",
+        data: {
+            labels: labels,
+            datasets: [
+                {
+                    label: "Puntos acumulados",
+                    data: puntos,
+                    backgroundColor: "rgba(255, 199, 44, 0.82)",
+                    borderColor: "rgba(255, 199, 44, 1)",
+                    borderWidth: 1,
+                    borderRadius: 10,
+                    maxBarThickness: 38
+                }
+            ]
+        },
+        options: {
+            indexAxis: "y",
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            return context.raw + " puntos";
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    ticks: {
+                        color: "#f8fafc",
+                        precision: 0
+                    },
+                    grid: {
+                        color: "rgba(255, 255, 255, 0.08)"
+                    }
+                },
+                y: {
+                    ticks: {
+                        color: "#f8fafc",
+                        font: {
+                            size: 11
+                        }
+                    },
+                    grid: {
+                        display: false
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
+
+{% endblock %}

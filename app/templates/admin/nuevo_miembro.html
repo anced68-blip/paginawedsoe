@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}Crear cuenta | Admin{% endblock %}
+{% block header %}Crear cuenta de miembro{% endblock %}
+{% block eyebrow %}Solo administrador{% endblock %}
+
+{% block content %}
+<section class="content-grid">
+    <form method="POST" class="panel form-panel wide">
+        <div class="panel-header">
+            <div>
+                <h3>Datos del nuevo miembro</h3>
+                <p>El administrador es el único rol autorizado para crear cuentas. Si dejas el usuario vacío, se generará como primerapellido.primernombre.</p>
+            </div>
+        </div>
+
+        <div class="form-grid-two">
+            <div>
+                <label>Primer nombre *</label>
+                <input type="text" name="primer_nombre" placeholder="Ej. Juan" required>
+            </div>
+
+            <div>
+                <label>Segundo nombre</label>
+                <input type="text" name="segundo_nombre" placeholder="Opcional">
+            </div>
+
+            <div>
+                <label>Primer apellido *</label>
+                <input type="text" name="primer_apellido" placeholder="Ej. Mamani" required>
+            </div>
+
+            <div>
+                <label>Segundo apellido</label>
+                <input type="text" name="segundo_apellido" placeholder="Opcional">
+            </div>
+
+            <div>
+                <label>Usuario manual</label>
+                <input type="text" name="username" placeholder="Opcional: mamani.juan">
+            </div>
+
+            <div>
+                <label>Contraseña inicial *</label>
+                <input type="text" name="password" value="123456" minlength="6" required>
+            </div>
+
+            <div>
+                <label>Correo electrónico</label>
+                <input type="email" name="email" placeholder="correo@ejemplo.com">
+            </div>
+
+            <div>
+                <label>Estado</label>
+                <select name="estado">
+                    <option value="activo">Activo</option>
+                    <option value="inactivo">Inactivo</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Rango inicial</label>
+                <select name="id_rango_manual">
+                    <option value="">Sin rango</option>
+                    {% for rango in rangos %}
+                    <option value="{{ rango.id_rango }}">{{ rango.nombre_rango }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button class="btn-primary" type="submit">Crear cuenta</button>
+            <a class="btn-secondary" href="{{ url_for('admin.miembros') }}">Cancelar</a>
+        </div>
+    </form>
+
+    <aside class="panel">
+        <h3>Regla de usuario</h3>
+        <p>El sistema crea usuarios con:</p>
+        <div class="hint">
+            <strong>primerapellido.primernombre</strong><br>
+            Ejemplo: <strong>mamani.juan</strong>
+        </div>
+        <p>El miembro podrá entrar y luego cambiar su usuario, correo, foto y contraseña desde su perfil.</p>
+    </aside>
+</section>
+{% endblock %}

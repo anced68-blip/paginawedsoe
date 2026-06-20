@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Sistema de Asistencias{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script defer src="{{ url_for('static', filename='js/app.js') }}"></script>
+</head>
+<body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    {% if current_user.is_authenticated %}
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">★</div>
+            <div>
+                <h1>Miembros</h1>
+                <span>Asistencias & Puntos</span>
+            </div>
+        </div>
+
+        <nav class="nav">
+            {% if current_user.rol == 'admin' %}
+                <a href="{{ url_for('admin.dashboard') }}">Panel admin</a>
+                <a href="{{ url_for('admin.nueva_actividad') }}">Nueva actividad</a>
+                <a href="{{ url_for('admin.actividades') }}">Actividades</a>
+                <a href="{{ url_for('admin.miembros') }}">Miembros</a>
+                <a href="{{ url_for('admin.nuevo_miembro') }}">Crear cuenta</a>
+            {% else %}
+                <a href="{{ url_for('miembro.dashboard') }}">Mis puntos</a>
+                <a href="{{ url_for('miembro.perfil') }}">Mi perfil</a>
+            {% endif %}
+            <a href="{{ url_for('auth.logout') }}" class="logout">Cerrar sesión</a>
+        </nav>
+
+        <div class="session-card">
+            <span>Sesión activa</span>
+            <strong>{{ current_user.username }}</strong>
+            <small>{{ current_user.rol|capitalize }}</small>
+        </div>
+    </aside>
+    {% endif %}
+
+    <main class="{% if current_user.is_authenticated %}main{% else %}main-auth{% endif %}">
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">{% block eyebrow %}Gestión profesional{% endblock %}</p>
+                <h2>{% block header %}Sistema de asistencias{% endblock %}</h2>
+            </div>
+        </header>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="alerts">
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Nueva Actividad | Admin{% endblock %}
+{% block header %}Crear actividad{% endblock %}
+{% block eyebrow %}Registro de puntos{% endblock %}
+
+{% block content %}
+<form method="POST" class="panel form-panel">
+    <h3>Datos de la actividad</h3>
+
+    <label>Nombre de la actividad</label>
+    <input type="text" name="nombre_actividad" placeholder="Ejemplo: Taller de liderazgo" required>
+
+    <label>Fecha</label>
+    <input type="date" name="fecha_actividad" required>
+
+    <label>Puntos de referencia</label>
+    <input type="number" name="puntos_referencia" min="0" value="100">
+
+    <label>Descripción</label>
+    <textarea name="descripcion" rows="4" placeholder="Detalle de la actividad"></textarea>
+
+    <button class="btn-primary" type="submit">Crear y registrar asistencias</button>
+</form>
+{% endblock %}

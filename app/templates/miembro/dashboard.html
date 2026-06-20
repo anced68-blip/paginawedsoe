@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block title %}Mis puntos | Miembro{% endblock %}
+{% block header %}Mi panel de puntos{% endblock %}
+{% block eyebrow %}Historial personal{% endblock %}
+
+{% block content %}
+<section class="profile-hero">
+    <div class="avatar-wrap">
+        {% if current_user.foto_perfil %}
+            <img src="{{ url_for('static', filename=current_user.foto_perfil) }}" alt="Foto de perfil">
+        {% else %}
+            <div class="avatar-placeholder">{{ miembro.primer_nombre[0] }}{{ miembro.primer_apellido[0] }}</div>
+        {% endif %}
+    </div>
+
+    <div>
+        <span class="badge">Rango {{ rango.nombre_rango if rango else 'Sin rango' }}</span>
+        <h1>{{ miembro.nombre_completo }}</h1>
+        <p>Usuario: <strong>{{ current_user.username }}</strong></p>
+    </div>
+
+    <div class="points-big">
+        <span>Total puntos</span>
+        <strong>{{ total_puntos }}</strong>
+    </div>
+</section>
+
+<section class="kpi-grid three">
+    <div class="kpi-card">
+        <span>Asistencias</span>
+        <strong>{{ asistencias }}</strong>
+        <small>actividades con ✓</small>
+    </div>
+    <div class="kpi-card">
+        <span>Faltas</span>
+        <strong>{{ faltas }}</strong>
+        <small>actividades con ✗</small>
+    </div>
+    <div class="kpi-card">
+        <span>Rango</span>
+        <strong>{{ rango.nombre_rango if rango else 'Sin rango' }}</strong>
+        <small>asignado por administración</small>
+    </div>
+</section>
+
+<div class="panel">
+    <div class="panel-header">
+        <div>
+            <h3>Historial de actividades</h3>
+            <p>Detalle del nombre de la actividad, fecha, asistencia y puntos conseguidos.</p>
+        </div>
+        <a class="btn-secondary" href="{{ url_for('miembro.perfil') }}">Configurar perfil</a>
+    </div>
+
+    <div class="timeline">
+        {% for registro, actividad in historial %}
+        <div class="timeline-item">
+            <div class="timeline-status {% if registro.asistio %}ok{% else %}bad{% endif %}">
+                {{ '✓' if registro.asistio else '✗' }}
+            </div>
+            <div>
+                <h4>{{ actividad.nombre_actividad }}</h4>
+                <span>{{ actividad.fecha_actividad.strftime('%d/%m/%Y') }}</span>
+                <p>{{ registro.observacion or 'Sin observación' }}</p>
+            </div>
+            <strong class="points-mini">{{ registro.puntos }} pts</strong>
+        </div>
+        {% else %}
+        <p>No tienes actividades registradas todavía.</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
